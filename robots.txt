@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kartaergasias.dokufile.com/sitemap.xml
