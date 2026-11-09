@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Για μικρές επιχειρήσεις με εργαζόμενους: χτύπημα εισόδου και εξόδου με PIN ή QR, αυτόματη αποστολή κάθε κίνησης στο ΕΡΓΑΝΗ ΙΙ και ειδοποίηση όταν κάτι λείπει.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@500;700;900&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,37 +77,100 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Κάρτα Εργασίας</a></div>
-  <nav class="top"><a href="#ti" data-ev="click_nav_ti">Τι παίρνετε</a><a href="price.html" data-ev="click_nav_timi">Τιμή</a><a href="#paradeigma" data-ev="click_nav_paradeigma">Παράδειγμα</a><a href="#start" data-ev="click_nav_start">Ξεκινήστε</a></nav>
+<header class="k-head"><div class="k-wrap k-head-in">
+  <div class="k-logo"><a href="index.html" data-ev="click_logo_home"><span class="k-logo-mark" aria-hidden="true"></span>Κάρτα Εργασίας</a></div>
+  <nav class="k-nav" aria-label="Κύριο μενού"><a href="#ti" data-ev="click_nav_ti">Τι παίρνετε</a><a href="price.html" data-ev="click_nav_timi">Τιμή</a><a href="#paradeigma" data-ev="click_nav_paradeigma">Παράδειγμα</a><a href="#start" data-ev="click_nav_start">Ξεκινήστε</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Η ψηφιακή κάρτα εργασίας της επιχείρησής σας — κάθε χτύπημα στο ΕΡΓΑΝΗ ΙΙ αυτόματα</h1>
-    <p class="sub">Για μικρές επιχειρήσεις του ιδιωτικού τομέα με εργαζόμενους: ο εργαζόμενος χτυπάει είσοδο και έξοδο με PIN ή QR, κάθε κίνηση αποστέλλεται αυτόματα στο ΕΡΓΑΝΗ ΙΙ, και βλέπετε αμέσως ποιος δεν χτύπησε ή αργεί.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Το χρειάζομαι</a>
-    <p class="cta-note">Η υπηρεσία είναι υπό προετοιμασία · Σε αυτή τη σελίδα δεν γίνεται καμία πληρωμή</p>
+<main>
+  <div class="k-wrap k-hero">
+    <div class="k-hero-text">
+      <h1>Κάθε χτύπημα της κάρτας εργασίας φτάνει αυτόματα στο ΕΡΓΑΝΗ ΙΙ</h1>
+      <p class="k-sub">Για μικρές επιχειρήσεις του ιδιωτικού τομέα με εργαζόμενους. Ο εργαζόμενος χτυπάει είσοδο και έξοδο με PIN ή QR, κάθε κίνηση αποστέλλεται αυτόματα στο ΕΡΓΑΝΗ ΙΙ, και βλέπετε αμέσως ποιος δεν χτύπησε ή αργεί.</p>
+      <div class="k-actions">
+        <a class="k-btn" href="price.html" data-ev="cta_click">Το χρειάζομαι</a>
+        <p class="k-note">Η υπηρεσία είναι υπό προετοιμασία. Σε αυτή τη σελίδα δεν γίνεται καμία πληρωμή.</p>
+      </div>
+    </div>
+
+    <figure class="k-cardfig">
+      <div class="k-card" aria-hidden="true">
+        <div class="k-card-top">
+          <span class="k-card-title">Κάρτα εργασίας</span>
+          <span class="k-card-name">Ελένη Κ., πρωινή βάρδια</span>
+        </div>
+        <div class="k-row k-row-head"><span>Ημέρα</span><span>Είσοδος</span><span>Έξοδος</span><span>ΕΡΓΑΝΗ</span></div>
+        <div class="k-row"><span>Δευτέρα</span><b>08:57</b><b>17:03</b><i class="k-ok"></i></div>
+        <div class="k-row"><span>Τρίτη</span><b>08:59</b><b>17:01</b><i class="k-ok"></i></div>
+        <div class="k-row"><span>Τετάρτη</span><b class="k-late">09:12</b><b>17:05</b><i class="k-ok"></i></div>
+        <div class="k-row k-row-miss"><span>Πέμπτη</span><em>δεν χτύπησε</em><em></em><i class="k-alert">!</i></div>
+        <div class="k-row k-row-now"><span>Παρασκευή</span><b class="k-stamp">08:58</b><b class="k-empty"></b><i class="k-ok k-ok-now"></i></div>
+        <div class="k-card-foot">
+          <span class="k-legend"><i class="k-ok"></i> στάλθηκε στο ΕΡΓΑΝΗ ΙΙ</span>
+          <span class="k-legend"><i class="k-alert">!</i> ειδοποίηση στον υπεύθυνο</span>
+        </div>
+      </div>
+      <figcaption>Ενδεικτική κάρτα με φανταστικά στοιχεία.</figcaption>
+    </figure>
   </div>
 
-  <section id="ti" data-view="features_view">
-    <h2>Τι παίρνετε</h2>
-    <div class="grid">
-      <div class="card"><b>Χτύπημα εισόδου και εξόδου</b><span>Με τετραψήφιο PIN ή σάρωση QR, σε κινητό ή tablet στο κατάστημα.</span><br><a class="btn" href="price.html" data-ev="feature_chtypima">Το χρειάζομαι</a></div>
-      <div class="card"><b>Αποστολή στο ΕΡΓΑΝΗ ΙΙ</b><span>Κάθε χτύπημα αποστέλλεται αυτόματα, χωρίς χειροκίνητη καταχώριση.</span><br><a class="btn" href="price.html" data-ev="feature_ergani">Το χρειάζομαι</a></div>
-      <div class="card"><b>Ειδοποιήσεις</b><span>Μήνυμα όταν κάποιος δεν χτύπησε ή η αποστολή δεν ολοκληρώθηκε.</span><br><a class="btn" href="price.html" data-ev="feature_eidopoiisi">Το χρειάζομαι</a></div>
-      <div class="card"><b>Ιστορικό ωρών</b><span>Οι ώρες κάθε εργαζομένου ανά ημέρα και μήνα, για τη μισθοδοσία.</span><br><a class="btn" href="price.html" data-ev="feature_istoriko">Το χρειάζομαι</a></div>
+  <section id="ti" class="k-sec k-feat" data-view="features_view">
+    <div class="k-wrap k-feat-in">
+      <h2>Τι παίρνετε</h2>
+      <div class="k-feat-list">
+        <div class="k-f">
+          <h3>Χτύπημα εισόδου και εξόδου</h3>
+          <p>Με τετραψήφιο PIN ή σάρωση QR, σε κινητό ή tablet στο κατάστημα.</p>
+          <a class="k-link" href="price.html" data-ev="feature_chtypima">Το χρειάζομαι</a>
+        </div>
+        <div class="k-f">
+          <h3>Αποστολή στο ΕΡΓΑΝΗ ΙΙ</h3>
+          <p>Κάθε χτύπημα αποστέλλεται αυτόματα, χωρίς χειροκίνητη καταχώριση.</p>
+          <a class="k-link" href="price.html" data-ev="feature_ergani">Το χρειάζομαι</a>
+        </div>
+        <div class="k-f">
+          <h3>Ειδοποιήσεις</h3>
+          <p>Μήνυμα όταν κάποιος δεν χτύπησε ή η αποστολή δεν ολοκληρώθηκε.</p>
+          <a class="k-link" href="price.html" data-ev="feature_eidopoiisi">Το χρειάζομαι</a>
+        </div>
+        <div class="k-f">
+          <h3>Ιστορικό ωρών</h3>
+          <p>Οι ώρες κάθε εργαζομένου ανά ημέρα και μήνα, για τη μισθοδοσία.</p>
+          <a class="k-link" href="price.html" data-ev="feature_istoriko">Το χρειάζομαι</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="paradeigma" data-view="example_view">
-    <h2>Παράδειγμα (φανταστικά στοιχεία)</h2>
-    <p class="fine">Καφετέρια με 6 εργαζόμενους σε βάρδιες. Το πρωί ο εργαζόμενος χτυπάει είσοδο με PIN στο tablet του ταμείου και η κίνηση φεύγει στο ΕΡΓΑΝΗ ΙΙ. Στις 10:15 ο ιδιοκτήτης λαμβάνει ειδοποίηση ότι ένας εργαζόμενος της πρωινής βάρδιας δεν έχει χτυπήσει ακόμη.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Επιλέξτε πακέτο</a>
+  <section id="paradeigma" class="k-sec k-ex" data-view="example_view">
+    <div class="k-wrap k-ex-in">
+      <div class="k-ex-text">
+        <h2>Ένα πρωινό σε μια καφετέρια</h2>
+        <p class="k-ex-tag">Παράδειγμα με φανταστικά στοιχεία</p>
+        <p>Καφετέρια με 6 εργαζόμενους σε βάρδιες. Το πρωί ο εργαζόμενος χτυπάει είσοδο με PIN στο tablet του ταμείου και η κίνηση φεύγει στο ΕΡΓΑΝΗ ΙΙ. Στις 10:15 ο ιδιοκτήτης λαμβάνει ειδοποίηση ότι ένας εργαζόμενος της πρωινής βάρδιας δεν έχει χτυπήσει ακόμη.</p>
+        <a class="k-btn k-btn-light" href="price.html" data-ev="click_cta_after_example">Επιλέξτε πακέτο</a>
+      </div>
+      <div class="k-phone" aria-hidden="true">
+        <div class="k-phone-screen">
+          <div class="k-phone-clock">10:15</div>
+          <div class="k-push">
+            <span class="k-push-app">Κάρτα Εργασίας</span>
+            <span class="k-push-text">Πρωινή βάρδια: ένας εργαζόμενος δεν έχει χτυπήσει ακόμη.</span>
+          </div>
+          <div class="k-push k-push-quiet">
+            <span class="k-push-app">Κάρτα Εργασίας</span>
+            <span class="k-push-text">Η είσοδος στο ταμείο στάλθηκε στο ΕΡΓΑΝΗ ΙΙ.</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
 <!-- seo-tekst:start -->
-  <section id="opis">
+  <section id="opis" class="k-sec k-read">
+    <div class="k-wrap k-read-in">
     <h2>Πώς λειτουργεί</h2>
+    <div class="k-prose">
     <p>Η Ψηφιακή Κάρτα Εργασίας επεκτείνεται σε όλο και περισσότερους κλάδους του ιδιωτικού τομέα. Για κάθε εργαζόμενο, η επιχείρηση καταγράφει την ώρα έναρξης και λήξης της εργασίας του και τη στέλνει στο σύστημα ΕΡΓΑΝΗ ΙΙ. Η καταγραφή γίνεται τη στιγμή που ο εργαζόμενος ξεκινά και τελειώνει, όχι στο τέλος της ημέρας.</p>
     <p>Το υπουργείο προσφέρει δική του εφαρμογή σάρωσης, αλλά για μια μικρή επιχείρηση με βάρδιες, πολλά καταστήματα ή εργαζόμενους εκτός έδρας, το καθημερινό χτύπημα και ο έλεγχος ότι όλα έφτασαν στο ΕΡΓΑΝΗ ΙΙ είναι ακόμη μια δουλειά που πέφτει στον ιδιοκτήτη, συχνά στη μέση της πιο πολυάσχολης ώρας.</p>
     <p>Η υπηρεσία κάνει το χτύπημα απλό. Ο εργαζόμενος χτυπάει είσοδο και έξοδο με τετραψήφιο PIN ή σαρώνοντας ένα QR, σε ένα tablet στο κατάστημα ή στο δικό του κινητό. Κάθε κίνηση αποστέλλεται αυτόματα στο ΕΡΓΑΝΗ ΙΙ και η επιβεβαίωση φαίνεται στη λίστα της ημέρας.</p>
@@ -115,31 +182,57 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Αν έχετε περισσότερα από ένα καταστήματα, κάθε κατάστημα έχει το δικό του σημείο χτυπήματος και ο ιδιοκτήτης βλέπει όλα τα καταστήματα μαζί, από το κινητό του, ακόμη και όταν δεν είναι εκεί.</p>
     <p>Η εκκίνηση γίνεται σε ένα απόγευμα: στοιχεία επιχείρησης, εργαζόμενοι και βάρδιες, και την επόμενη μέρα οι εργαζόμενοι χτυπούν ήδη στην υπηρεσία. Δεν χρειάζεται εγκατάσταση, λειτουργεί στον browser και στο κινητό.</p>
     <p>Η υπηρεσία απευθύνεται σε μικρές επιχειρήσεις με λίγους έως μερικές δεκάδες εργαζόμενους: καταστήματα, εστίαση, υπηρεσίες, συνεργεία. Βρίσκεται σε προετοιμασία: ελέγχουμε πρώτα αν τη χρειάζονται οι επιχειρήσεις. Δεν είναι το ΕΡΓΑΝΗ και η επιχείρηση παραμένει υπεύθυνη για τις υποχρεώσεις της.</p>
+    </div>
+    </div>
   </section>
-  <section id="faq">
+  <section id="faq" class="k-sec k-faq">
+    <div class="k-wrap k-faq-in">
     <h2>Ερωτήσεις</h2>
+    <div class="k-qa">
     <h3>Πώς χτυπάει ο εργαζόμενος;</h3>
     <p>Με τετραψήφιο PIN ή σάρωση QR, σε tablet του καταστήματος ή στο κινητό του.</p>
+    </div>
+    <div class="k-qa">
     <h3>Αποστέλλονται τα χτυπήματα στο ΕΡΓΑΝΗ ΙΙ;</h3>
     <p>Ναι, κάθε χτύπημα αποστέλλεται αυτόματα και η επιβεβαίωση φαίνεται στη λίστα της ημέρας.</p>
+    </div>
+    <div class="k-qa">
     <h3>Τι γίνεται αν κάποιος δεν χτυπήσει;</h3>
     <p>Ο υπεύθυνος λαμβάνει ειδοποίηση ώστε το λάθος να διορθωθεί την ίδια μέρα.</p>
+    </div>
+    <div class="k-qa">
     <h3>Χρειάζεται εγκατάσταση;</h3>
     <p>Όχι, η υπηρεσία λειτουργεί στον browser και στο κινητό.</p>
+    </div>
+    <div class="k-qa">
     <h3>Μπορώ να τη χρησιμοποιήσω ήδη;</h3>
     <p>Όχι ακόμη. Η υπηρεσία είναι σε προετοιμασία και ελέγχουμε αν τη χρειάζονται οι επιχειρήσεις.</p>
+    </div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Προσθέστε την επιχείρησή σας</h2>
-    <p><label>Αριθμός εργαζομένων<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— επιλέξτε —</option><option>1–5</option><option>6–15</option><option>16–50</option><option>Πάνω από 50</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Έναρξη</a>
-  </section>
-</div>
 
-<footer><div class="wrap">
+  <section id="start" class="k-sec k-start" data-view="start_view">
+    <div class="k-wrap">
+      <div class="k-clock">
+        <div class="k-clock-text">
+          <h2>Προσθέστε την επιχείρησή σας</h2>
+          <p>Πείτε μας πόσους εργαζόμενους έχετε και ξεκινήστε.</p>
+        </div>
+        <div class="k-clock-form">
+          <label class="k-field">Αριθμός εργαζομένων
+            <select data-ev-focus="form_start"><option value="">— επιλέξτε —</option><option>1–5</option><option>6–15</option><option>16–50</option><option>Πάνω από 50</option></select>
+          </label>
+          <a class="k-btn k-btn-punch" href="price.html" data-ev="form_submit_click">Έναρξη</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="k-foot"><div class="k-wrap">
   <p><a href="privacy.html" data-ev="click_legal_privacy">Πολιτική απορρήτου</a></p>
-  <p class="muted">Καταγραφή και αποστολή της κάρτας εργασίας για την επιχείρησή σας. Δεν είναι το ΕΡΓΑΝΗ· η επιχείρηση παραμένει υπεύθυνη για τις υποχρεώσεις της.</p>
+  <p class="k-muted">Καταγραφή και αποστολή της κάρτας εργασίας για την επιχείρησή σας. Δεν είναι το ΕΡΓΑΝΗ· η επιχείρηση παραμένει υπεύθυνη για τις υποχρεώσεις της.</p>
 </div></footer>
 
 </body>
