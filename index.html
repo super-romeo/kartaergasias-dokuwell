@@ -15,10 +15,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Για μικρές επιχειρήσεις με εργαζόμενους: χτύπημα εισόδου και εξόδου με PIN ή QR, αυτόματη αποστολή κάθε κίνησης στο ΕΡΓΑΝΗ ΙΙ και ειδοποίηση όταν κάτι λείπει.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap">
-<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -78,84 +74,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <header><div class="wrap">
-  <a href="index.html" data-ev="click_logo_home">Κάρτα Εργασίας</a>
-  <nav aria-label="Κύριο μενού"><a href="#ti" data-ev="click_nav_ti">Τι παίρνετε</a><a href="price.html" data-ev="click_nav_timi">Τιμή</a><a href="#paradeigma" data-ev="click_nav_paradeigma">Παράδειγμα</a><a href="#start" data-ev="click_nav_start">Ξεκινήστε</a></nav>
+  <div class="logo"><a href="index.html" data-ev="click_logo_home">Κάρτα Εργασίας</a></div>
+  <nav class="top"><a href="#ti" data-ev="click_nav_ti">Τι παίρνετε</a><a href="price.html" data-ev="click_nav_timi">Τιμή</a><a href="#paradeigma" data-ev="click_nav_paradeigma">Παράδειγμα</a><a href="#start" data-ev="click_nav_start">Ξεκινήστε</a></nav>
 </div></header>
 
-<main>
-  <section class="hero">
-    <div class="wrap">
-      <div class="stack">
-        <h1>Κάθε χτύπημα της κάρτας εργασίας φτάνει αυτόματα στο ΕΡΓΑΝΗ ΙΙ</h1>
-        <p>Για μικρές επιχειρήσεις του ιδιωτικού τομέα με εργαζόμενους. Ο εργαζόμενος χτυπάει είσοδο και έξοδο με PIN ή QR, κάθε κίνηση αποστέλλεται αυτόματα στο ΕΡΓΑΝΗ ΙΙ, και βλέπετε αμέσως ποιος δεν χτύπησε ή αργεί.</p>
-        <a class="punch" href="price.html" data-ev="cta_click">Το χρειάζομαι</a>
-        <p class="note">Η υπηρεσία είναι υπό προετοιμασία. Σε αυτή τη σελίδα δεν γίνεται καμία πληρωμή.</p>
-      </div>
-      <figure>
-        <div class="slip" aria-hidden="true">
-          <p><strong>Κάρτα εργασίας</strong> <span class="note">Ελένη Κ., πρωινή βάρδια</span></p>
-          <div class="row"><span>Ημέρα</span><span>Είσοδος</span><span>Έξοδος</span><span>ΕΡΓΑΝΗ</span></div>
-          <div class="row"><span>Δευτέρα</span><b>08:57</b><b>17:03</b><i class="ok"></i></div>
-          <div class="row"><span>Τρίτη</span><b>08:59</b><b>17:01</b><i class="ok"></i></div>
-          <div class="row"><span>Τετάρτη</span><b class="late">09:12</b><b>17:05</b><i class="ok"></i></div>
-          <div class="row"><span>Πέμπτη</span><em>δεν χτύπησε</em><i class="alert">!</i></div>
-          <div class="row"><span>Παρασκευή</span><b class="stamp">08:58</b><b></b><i class="ok"></i></div>
-          <p class="legend"><span><i class="ok"></i> στάλθηκε στο ΕΡΓΑΝΗ ΙΙ</span><span><i class="alert">!</i> ειδοποίηση στον υπεύθυνο</span></p>
-        </div>
-        <figcaption class="note">Ενδεικτική κάρτα με φανταστικά στοιχεία.</figcaption>
-      </figure>
+<div class="wrap">
+  <div class="hero">
+    <h1>Η ψηφιακή κάρτα εργασίας της επιχείρησής σας — κάθε χτύπημα στο ΕΡΓΑΝΗ ΙΙ αυτόματα</h1>
+    <p class="sub">Για μικρές επιχειρήσεις του ιδιωτικού τομέα με εργαζόμενους: ο εργαζόμενος χτυπάει είσοδο και έξοδο με PIN ή QR, κάθε κίνηση αποστέλλεται αυτόματα στο ΕΡΓΑΝΗ ΙΙ, και βλέπετε αμέσως ποιος δεν χτύπησε ή αργεί.</p>
+    <a class="cta" href="price.html" data-ev="cta_click">Το χρειάζομαι</a>
+    <p class="cta-note">Η υπηρεσία είναι υπό προετοιμασία · Σε αυτή τη σελίδα δεν γίνεται καμία πληρωμή</p>
+  </div>
+
+  <section id="ti" data-view="features_view">
+    <h2>Τι παίρνετε</h2>
+    <div class="grid">
+      <div class="card"><b>Χτύπημα εισόδου και εξόδου</b><span>Με τετραψήφιο PIN ή σάρωση QR, σε κινητό ή tablet στο κατάστημα.</span><br><a class="btn" href="price.html" data-ev="feature_chtypima">Το χρειάζομαι</a></div>
+      <div class="card"><b>Αποστολή στο ΕΡΓΑΝΗ ΙΙ</b><span>Κάθε χτύπημα αποστέλλεται αυτόματα, χωρίς χειροκίνητη καταχώριση.</span><br><a class="btn" href="price.html" data-ev="feature_ergani">Το χρειάζομαι</a></div>
+      <div class="card"><b>Ειδοποιήσεις</b><span>Μήνυμα όταν κάποιος δεν χτύπησε ή η αποστολή δεν ολοκληρώθηκε.</span><br><a class="btn" href="price.html" data-ev="feature_eidopoiisi">Το χρειάζομαι</a></div>
+      <div class="card"><b>Ιστορικό ωρών</b><span>Οι ώρες κάθε εργαζομένου ανά ημέρα και μήνα, για τη μισθοδοσία.</span><br><a class="btn" href="price.html" data-ev="feature_istoriko">Το χρειάζομαι</a></div>
     </div>
   </section>
 
-  <section id="ti" class="paper" data-view="features_view">
-    <div class="wrap split">
-      <h2>Τι παίρνετε</h2>
-      <div class="list two">
-        <article>
-          <h3>Χτύπημα εισόδου και εξόδου</h3>
-          <p>Με τετραψήφιο PIN ή σάρωση QR, σε κινητό ή tablet στο κατάστημα.</p>
-          <a class="link" href="price.html" data-ev="feature_chtypima">Το χρειάζομαι</a>
-        </article>
-        <article>
-          <h3>Αποστολή στο ΕΡΓΑΝΗ ΙΙ</h3>
-          <p>Κάθε χτύπημα αποστέλλεται αυτόματα, χωρίς χειροκίνητη καταχώριση.</p>
-          <a class="link" href="price.html" data-ev="feature_ergani">Το χρειάζομαι</a>
-        </article>
-        <article>
-          <h3>Ειδοποιήσεις</h3>
-          <p>Μήνυμα όταν κάποιος δεν χτύπησε ή η αποστολή δεν ολοκληρώθηκε.</p>
-          <a class="link" href="price.html" data-ev="feature_eidopoiisi">Το χρειάζομαι</a>
-        </article>
-        <article>
-          <h3>Ιστορικό ωρών</h3>
-          <p>Οι ώρες κάθε εργαζομένου ανά ημέρα και μήνα, για τη μισθοδοσία.</p>
-          <a class="link" href="price.html" data-ev="feature_istoriko">Το χρειάζομαι</a>
-        </article>
-      </div>
-    </div>
+  <section id="paradeigma" data-view="example_view">
+    <h2>Παράδειγμα (φανταστικά στοιχεία)</h2>
+    <p class="fine">Καφετέρια με 6 εργαζόμενους σε βάρδιες. Το πρωί ο εργαζόμενος χτυπάει είσοδο με PIN στο tablet του ταμείου και η κίνηση φεύγει στο ΕΡΓΑΝΗ ΙΙ. Στις 10:15 ο ιδιοκτήτης λαμβάνει ειδοποίηση ότι ένας εργαζόμενος της πρωινής βάρδιας δεν έχει χτυπήσει ακόμη.</p>
+    <a class="cta" href="price.html" data-ev="click_cta_after_example">Επιλέξτε πακέτο</a>
   </section>
-
-  <section id="paradeigma" class="dark" data-view="example_view">
-    <div class="wrap split">
-      <div class="phone" aria-hidden="true">
-        <p>10:15</p>
-        <div class="slip"><b><i class="alert">!</i> Κάρτα Εργασίας</b>Πρωινή βάρδια: ένας εργαζόμενος δεν έχει χτυπήσει ακόμη.</div>
-        <div class="slip"><b><i class="ok"></i> Κάρτα Εργασίας</b>Η είσοδος στο ταμείο στάλθηκε στο ΕΡΓΑΝΗ ΙΙ.</div>
-      </div>
-      <div class="stack">
-        <h2>Ένα πρωινό σε μια καφετέρια</h2>
-        <p class="note">Παράδειγμα με φανταστικά στοιχεία</p>
-        <p>Καφετέρια με 6 εργαζόμενους σε βάρδιες. Το πρωί ο εργαζόμενος χτυπάει είσοδο με PIN στο tablet του ταμείου και η κίνηση φεύγει στο ΕΡΓΑΝΗ ΙΙ. Στις 10:15 ο ιδιοκτήτης λαμβάνει ειδοποίηση ότι ένας εργαζόμενος της πρωινής βάρδιας δεν έχει χτυπήσει ακόμη.</p>
-        <a class="punch" href="price.html" data-ev="click_cta_after_example">Επιλέξτε πακέτο</a>
-      </div>
-    </div>
-  </section>
-
 <!-- seo-tekst:start -->
   <section id="opis">
-    <div class="wrap split">
     <h2>Πώς λειτουργεί</h2>
-    <div class="stack">
     <p>Η Ψηφιακή Κάρτα Εργασίας επεκτείνεται σε όλο και περισσότερους κλάδους του ιδιωτικού τομέα. Για κάθε εργαζόμενο, η επιχείρηση καταγράφει την ώρα έναρξης και λήξης της εργασίας του και τη στέλνει στο σύστημα ΕΡΓΑΝΗ ΙΙ. Η καταγραφή γίνεται τη στιγμή που ο εργαζόμενος ξεκινά και τελειώνει, όχι στο τέλος της ημέρας.</p>
     <p>Το υπουργείο προσφέρει δική του εφαρμογή σάρωσης, αλλά για μια μικρή επιχείρηση με βάρδιες, πολλά καταστήματα ή εργαζόμενους εκτός έδρας, το καθημερινό χτύπημα και ο έλεγχος ότι όλα έφτασαν στο ΕΡΓΑΝΗ ΙΙ είναι ακόμη μια δουλειά που πέφτει στον ιδιοκτήτη, συχνά στη μέση της πιο πολυάσχολης ώρας.</p>
     <p>Η υπηρεσία κάνει το χτύπημα απλό. Ο εργαζόμενος χτυπάει είσοδο και έξοδο με τετραψήφιο PIN ή σαρώνοντας ένα QR, σε ένα tablet στο κατάστημα ή στο δικό του κινητό. Κάθε κίνηση αποστέλλεται αυτόματα στο ΕΡΓΑΝΗ ΙΙ και η επιβεβαίωση φαίνεται στη λίστα της ημέρας.</p>
@@ -167,57 +115,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Αν έχετε περισσότερα από ένα καταστήματα, κάθε κατάστημα έχει το δικό του σημείο χτυπήματος και ο ιδιοκτήτης βλέπει όλα τα καταστήματα μαζί, από το κινητό του, ακόμη και όταν δεν είναι εκεί.</p>
     <p>Η εκκίνηση γίνεται σε ένα απόγευμα: στοιχεία επιχείρησης, εργαζόμενοι και βάρδιες, και την επόμενη μέρα οι εργαζόμενοι χτυπούν ήδη στην υπηρεσία. Δεν χρειάζεται εγκατάσταση, λειτουργεί στον browser και στο κινητό.</p>
     <p>Η υπηρεσία απευθύνεται σε μικρές επιχειρήσεις με λίγους έως μερικές δεκάδες εργαζόμενους: καταστήματα, εστίαση, υπηρεσίες, συνεργεία. Βρίσκεται σε προετοιμασία: ελέγχουμε πρώτα αν τη χρειάζονται οι επιχειρήσεις. Δεν είναι το ΕΡΓΑΝΗ και η επιχείρηση παραμένει υπεύθυνη για τις υποχρεώσεις της.</p>
-    </div>
-    </div>
   </section>
   <section id="faq">
-    <div class="wrap split">
     <h2>Ερωτήσεις</h2>
-    <div class="list">
-    <article>
     <h3>Πώς χτυπάει ο εργαζόμενος;</h3>
     <p>Με τετραψήφιο PIN ή σάρωση QR, σε tablet του καταστήματος ή στο κινητό του.</p>
-    </article>
-    <article>
     <h3>Αποστέλλονται τα χτυπήματα στο ΕΡΓΑΝΗ ΙΙ;</h3>
     <p>Ναι, κάθε χτύπημα αποστέλλεται αυτόματα και η επιβεβαίωση φαίνεται στη λίστα της ημέρας.</p>
-    </article>
-    <article>
     <h3>Τι γίνεται αν κάποιος δεν χτυπήσει;</h3>
     <p>Ο υπεύθυνος λαμβάνει ειδοποίηση ώστε το λάθος να διορθωθεί την ίδια μέρα.</p>
-    </article>
-    <article>
     <h3>Χρειάζεται εγκατάσταση;</h3>
     <p>Όχι, η υπηρεσία λειτουργεί στον browser και στο κινητό.</p>
-    </article>
-    <article>
     <h3>Μπορώ να τη χρησιμοποιήσω ήδη;</h3>
     <p>Όχι ακόμη. Η υπηρεσία είναι σε προετοιμασία και ελέγχουμε αν τη χρειάζονται οι επιχειρήσεις.</p>
-    </article>
-    </div>
-    </div>
   </section>
 <!-- seo-tekst:end -->
-
-  <section id="start" class="dark" data-view="start_view">
-    <div class="wrap split">
-      <div class="stack">
-        <h2>Προσθέστε την επιχείρησή σας</h2>
-        <p>Πείτε μας πόσους εργαζόμενους έχετε και ξεκινήστε.</p>
-      </div>
-      <div class="stack">
-        <label>Αριθμός εργαζομένων
-          <select data-ev-focus="form_start"><option value="">— επιλέξτε —</option><option>1–5</option><option>6–15</option><option>16–50</option><option>Πάνω από 50</option></select>
-        </label>
-        <a class="punch" href="price.html" data-ev="form_submit_click">Έναρξη</a>
-      </div>
-    </div>
+  <section id="start" data-view="start_view">
+    <h2>Προσθέστε την επιχείρησή σας</h2>
+    <p><label>Αριθμός εργαζομένων<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— επιλέξτε —</option><option>1–5</option><option>6–15</option><option>16–50</option><option>Πάνω από 50</option></select></label></p>
+    <a class="cta" href="price.html" data-ev="form_submit_click">Έναρξη</a>
   </section>
-</main>
+</div>
 
 <footer><div class="wrap">
   <p><a href="privacy.html" data-ev="click_legal_privacy">Πολιτική απορρήτου</a></p>
-  <p>Καταγραφή και αποστολή της κάρτας εργασίας για την επιχείρησή σας. Δεν είναι το ΕΡΓΑΝΗ· η επιχείρηση παραμένει υπεύθυνη για τις υποχρεώσεις της.</p>
+  <p class="muted">Καταγραφή και αποστολή της κάρτας εργασίας για την επιχείρησή σας. Δεν είναι το ΕΡΓΑΝΗ· η επιχείρηση παραμένει υπεύθυνη για τις υποχρεώσεις της.</p>
 </div></footer>
 
 </body>
